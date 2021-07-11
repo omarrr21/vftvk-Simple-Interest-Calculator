@@ -10,8 +10,7 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" min="1" max="20" value="10.25" step="0.25" id="rate"><span for="rate"
-        onchange=updateRate()>
+        Rate <input type="range" min="1" max="20" value="10.25" step="0.25" id="rate"><span id="rate_val">10.25%</span>
             10.25%
         </span> <br/>
         No. of Years <select id="years">
@@ -26,9 +25,9 @@
     <option value="10">10</option>
     <!-- fill in the rest of the values-->
 </select>  <br/>
+        <button onclick="compute()">Compute interest</button>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute interest</button>
     </div>
     <footer>
 
