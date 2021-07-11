@@ -23,7 +23,7 @@ function compute() {
 
 function updateRate() {
   const rateval = document.getElementById("rate").value;
-  document.getElementById("rate_val").innerText = `${rateval}%`;
+  document.getElementById("rate_val").innerText = rateval;
 }
 
 const rateSlider = document.getElementById("rate");
